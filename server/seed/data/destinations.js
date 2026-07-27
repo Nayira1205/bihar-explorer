@@ -1,0 +1,98 @@
+module.exports = [
+  {
+    slug: "nalanda",
+    name: "Nalanda",
+    district: "Nalanda",
+    category: "Heritage",
+    entryFee: "₹25 (Indians) · ₹300 (Foreign)",
+    openingHours: "9:00 AM – 5:00 PM, closed Fridays",
+    bestSeason: "October – March",
+    shortDesc: "Ruins of the world's oldest residential university.",
+    longDesc:
+      "Founded in the 5th century, Nalanda Mahavihara drew scholars from across Asia for over 700 years. Walk the red-brick ruins of its monasteries and stupas, now a UNESCO World Heritage Site, and see how a single campus once shaped the intellectual history of the world.",
+    images: ["Nalanda.jpg", "mahabodhi-temple.jpg", "golghar.jpg"],
+    nearby: ["Rajgir (12 km)", "Nalanda Archaeological Museum", "Xuanzang Memorial Hall"],
+    tips: [
+      "Hire a guide at the entrance — the ruins have little on-site signage.",
+      "Combine with Rajgir for a full day trip.",
+      "Carry water; there's little shade across the site.",
+    ],
+  },
+  {
+    slug: "bodh-gaya",
+    name: "Bodh Gaya",
+    district: "Gaya",
+    category: "Spiritual",
+    entryFee: "Free",
+    openingHours: "5:00 AM – 9:00 PM, daily",
+    bestSeason: "November – February",
+    shortDesc: "Where Buddha attained enlightenment under the Bodhi Tree.",
+    longDesc:
+      "The Mahabodhi Temple complex marks the spot of Siddhartha Gautama's enlightenment and remains one of the four holiest Buddhist sites in the world. Monasteries built by Thailand, Japan, Bhutan, and a dozen other nations ring the town, each in its own national style.",
+    images: [
+      "Mahabodhi_Bodhgaya.jpg",
+      "Bodh_Gaya_tai_temple.jpg",
+      "Vietnam_Temple_in_Bodh_Gaya.jpeg",
+    ],
+    nearby: ["Mahabodhi Temple", "Great Buddha Statue", "Thai Monastery"],
+    tips: [
+      "Visit at dawn to see monks in meditation around the Bodhi Tree.",
+      "Dress modestly; shoulders and knees should be covered.",
+      "December's Kalachakra season draws large crowds — book stays early.",
+    ],
+  },
+  {
+    slug: "rajgir",
+    name: "Rajgir",
+    district: "Rajgir",
+    category: "Nature",
+    entryFee: "₹150 (Ropeway) · Nature Safari ₹100",
+    openingHours: "8:00 AM – 5:00 PM",
+    bestSeason: "October – March",
+    shortDesc: "Hot springs, hills, and a ropeway to the Peace Pagoda.",
+    longDesc:
+      "Ringed by five hills, Rajgir was once the capital of the Magadha empire. Today it's better known for its ropeway ride up to the Vishwa Shanti Stupa, the glass skywalk, and the Rajgir Nature Safari — a rare combination of history and open-air adventure in one town.",
+    images: ["Rajgir.webp", "Son_Bhandar_caves,_Rajgir,_Bihar_01.jpg", "Shanti_Stupa,_Rajgir.jpg"],
+    nearby: ["Nalanda (12 km)", "Griddhakuta Hill", "Venu Vana"],
+    tips: [
+      "The ropeway queue moves fast on weekdays, slow on weekends.",
+      "Nature Safari closes for lunch — check timings ahead.",
+    ],
+  },
+  {
+    slug: "valmiki-tiger-reserve",
+    name: "Valmiki Tiger Reserve",
+    district: "West Champaran",
+    category: "Adventure",
+    entryFee: "₹200 (Safari, approx.)",
+    openingHours: "6:00 AM – 10:00 AM, 2:00 PM – 5:00 PM",
+    bestSeason: "November – April",
+    shortDesc: "Bihar's only tiger reserve, on the Nepal border.",
+    longDesc:
+      "Spread across the Himalayan foothills, Valmiki is Bihar's sole tiger reserve and part of the wider Terai conservation belt. Jeep safaris through sal forests and grassland offer sightings of tigers, elephants, and gharials in a landscape most visitors never associate with the state.",
+    images: ["valmiki.jpeg"],
+    nearby: ["Valmiki Nagar", "Gandak Barrage", "Someshwar Hills"],
+    tips: [
+      "Book safaris in advance during peak winter months.",
+      "Reserve closes entirely during monsoon (July–September).",
+    ],
+  },
+  {
+    slug: "patna-golghar",
+    name: "Golghar & Patna",
+    district: "Patna",
+    category: "Modern",
+    entryFee: "₹10",
+    openingHours: "8:00 AM – 6:00 PM",
+    bestSeason: "October – February",
+    shortDesc: "Colonial granary, riverfront, and the state's living capital.",
+    longDesc:
+      "Built in 1786 as a famine-relief granary, the beehive-shaped Golghar now offers the best panoramic view of the Ganges and the city. Pair it with the Bihar Museum and Patna's rapidly modernising riverfront for a sense of how the state's capital is reinventing itself.",
+    images: ["golghar.jpg", "patna.jpg", "Sabhyata_dwar_Patna.jpg"],
+    nearby: ["Bihar Museum", "Patna Sahib Gurudwara", "Marine Drive Riverfront"],
+    tips: [
+      "Climb the spiral ramp at sunset for the best light over the Ganges.",
+      "Bihar Museum is closed on Mondays.",
+    ],
+  },
+];
