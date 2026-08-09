@@ -38,7 +38,26 @@ export function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ user, checkingSession, login, register, logout }}>
+    <AuthContext.Provider
+  value={{
+    user,
+    checkingSession,
+
+    // Existing API
+    login,
+    register,
+    logout,
+
+    // Aliases for added API pages
+    signIn: login,
+    signUp: register,
+    signOut: logout,
+
+    // Compatibility aliases
+    loading: checkingSession,
+    profile: user,
+  }}
+>
       {children}
     </AuthContext.Provider>
   );

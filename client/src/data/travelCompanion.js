@@ -7,11 +7,13 @@ export const travellerTypes = [
   "Group",
 ];
 
-export const durations = ["1 day", "Weekend", "3–5 days", "1 week"];
+export const durations = ["1 day", "Weekend", "3–5 days", "1 week", "2 weeks"];
 
 export const budgets = ["Budget", "Mid-range", "Luxury"];
 
 export const seasons = ["Winter", "Summer", "Monsoon", "Festival season"];
+
+export const transportOptions = ["Train", "Bus", "Self-drive / Car", "Flight + local transport"];
 
 export const interestOptions = [
   "Heritage",
@@ -22,6 +24,7 @@ export const interestOptions = [
   "Wildlife",
   "Shopping",
   "Spiritual",
+  "Culture",
 ];
 
 export const districts = [
