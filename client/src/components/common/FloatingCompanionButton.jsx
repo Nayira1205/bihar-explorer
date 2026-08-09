@@ -4,7 +4,7 @@ function FloatingCompanionButton({ onClick }) {
   return (
     <button
       onClick={onClick}
-      className="group fixed bottom-6 right-6 z-40 flex items-center gap-3 rounded-full bg-gold py-3.5 pl-4 pr-5 text-ink shadow-[0_12px_32px_-8px_rgba(201,161,92,0.65)] transition-all duration-300 hover:scale-105 hover:pr-6 sm:bottom-8 sm:right-8"
+      className="group fixed bottom-6 right-6 z-40 flex items-center gap-3 rounded-full bg-gold py-3.5 pl-4 pr-5 text-ink shadow-gold transition-all duration-300 hover:scale-105 hover:pr-6 sm:bottom-8 sm:right-8"
       aria-label="Open Travel Companion"
     >
       <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-ink/10">

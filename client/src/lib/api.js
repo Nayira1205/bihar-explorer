@@ -1,5 +1,7 @@
 // Base URL comes from .env (VITE_API_URL). Falls back to the local dev
 // server so this works out of the box with `npm run dev` on the backend.
+import axios from "axios";
+
 const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 class ApiClientError extends Error {
@@ -50,6 +52,30 @@ export const api = {
     request("/newsletter", { method: "POST", body: JSON.stringify({ email }) }),
   submitContact: (payload) =>
     request("/contact", { method: "POST", body: JSON.stringify(payload) }),
+    getWishlist: () => request("/wishlist"),
+
+addToWishlist: (destinationSlug) =>
+  request("/wishlist", {
+    method: "POST",
+    body: JSON.stringify({ destinationSlug }),
+  }),
+
+removeFromWishlist: (slug) =>
+  request(`/wishlist/${slug}`, {
+    method: "DELETE",
+  }),
 };
 
 export { ApiClientError };
+
+// Several pages (ProfilePage, AdminPage, ContactPage, TravelPlannerPage,
+// DestinationDetailPage) import this as `import api from '../lib/api'` and
+// call it axios-style (api.get(path), api.post(path, body)). The named
+// `api` export above (fetch-based, used by the hooks and AuthContext) is
+// unchanged — this is purely additive so both styles keep working.
+const axiosClient = axios.create({
+  baseURL: API_BASE_URL,
+  withCredentials: true, // send/receive the httpOnly auth cookie
+});
+
+export default axiosClient;
