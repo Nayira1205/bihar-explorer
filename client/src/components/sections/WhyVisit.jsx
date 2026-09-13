@@ -48,14 +48,14 @@ const reasons = [
 
 function WhyVisit() {
   return (
-    <section id="experience" className="bg-[#0A0B12] py-28 px-6 md:px-12 xl:px-20 2xl:px-28">
+    <section id="experience" className="bg-[#0A0B12] py-28 px-6 md:px-12 xl:px-20">
 
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center">
 
         <div className="flex items-center justify-center gap-4">
           <span className="font-mono text-xs text-[#C9A15C]/70">
-            03
+            02
           </span>
 
           <span className="h-px w-8 bg-[#8C2F2F]"></span>

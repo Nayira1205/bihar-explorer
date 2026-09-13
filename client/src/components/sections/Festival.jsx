@@ -9,7 +9,7 @@ function Festival() {
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center">
         <div className="flex items-center justify-center gap-4">
-          <span className="font-mono text-xs text-[#C9A15C]/70">06</span>
+          <span className="font-mono text-xs text-[#C9A15C]/70">05</span>
           <span className="w-8 h-px bg-[#8C2F2F]"></span>
           <p className="uppercase tracking-[0.35em] text-[#C9A15C] text-sm">
             Festivals & Culture

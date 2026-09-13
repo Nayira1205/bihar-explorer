@@ -74,7 +74,7 @@ function About() {
                 : "translate-y-5 opacity-0"
             }`}
           >
-            <SectionEyebrow number="02" label="The Story of Bihar" />
+            <SectionEyebrow number="01" label="The Story of Bihar" />
           </div> <br/>
 
           {/* Heading */}
