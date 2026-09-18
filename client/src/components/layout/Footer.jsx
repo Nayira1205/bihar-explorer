@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, ArrowRight, Sparkles } from 'lucide-react';
-import { Instagram, Facebook, Youtube, TwitterX } from '../ui/SocialIcons';
+import { Mail, MapPin, ArrowRight, Sparkles, Code2 } from 'lucide-react';
+import { Instagram, Facebook, Youtube, TwitterX, Github } from '../ui/SocialIcons';
 import { api } from '../../lib/api';
 
 const exploreLinks = [
@@ -26,6 +26,11 @@ const socials = [
   { icon: TwitterX, label: 'Twitter / X' },
 ];
 
+// TODO: replace these three with your real details before pushing.
+const DEVELOPER_NAME = 'Nayira Sri';
+const GITHUB_URL = 'https://github.com/Nayira1205/bihar-explorer';
+const CONTACT_EMAIL = 'srinayira26314@gmail.com';
+
 function Footer() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('idle');
@@ -35,7 +40,7 @@ function Footer() {
     if (!email.trim()) return;
     setStatus('loading');
     try {
-      api.subscribeNewsletter(email)
+      await api.subscribeNewsletter(email);
       setStatus('done');
       setEmail('');
     } catch {
@@ -77,10 +82,23 @@ function Footer() {
                 </li>
               ))}
             </ul>
-            <div className="mt-6 space-y-2 text-sm text-parchment/60">
-              <p className="flex items-center gap-2"><Phone size={14} className="text-gold" /> Bihar Tourism: +91-612-221-7045</p>
-              <p className="flex items-center gap-2"><Mail size={14} className="text-gold" /> secy-tourism-bih@nic.in</p>
-            </div>
+
+            <h3 className="mt-8 text-xs uppercase tracking-[0.25em] text-gold">About This Project</h3>
+            <ul className="mt-5 space-y-3 text-sm text-parchment/60">
+              <li className="flex items-center gap-2">
+                <Code2 size={14} className="flex-shrink-0 text-gold" /> Built by {DEVELOPER_NAME}
+              </li>
+              <li>
+                <a href={GITHUB_URL} target="_blank" rel="noreferrer" className="flex items-center gap-2 transition hover:text-gold">
+                  <Github size={14} className="flex-shrink-0 text-gold" /> View source on GitHub
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-2 transition hover:text-gold">
+                  <Mail size={14} className="flex-shrink-0 text-gold" /> Contact developer
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div>
@@ -101,8 +119,8 @@ function Footer() {
         </div>
 
         <div className="flex flex-col items-center gap-4 py-8 text-center text-xs text-parchment/40 sm:flex-row sm:justify-between sm:text-left">
-          <p className="flex items-center gap-1.5"><MapPin size={13} /> Concept portal for the Bihar Tourism experience - not an official government website.</p>
-          <p>&copy; {new Date().getFullYear()} Bihar Explorer. All rights reserved.</p>
+          <p className="flex items-center gap-1.5"><MapPin size={13} /> An independent student project - not affiliated with or endorsed by Bihar Tourism.</p>
+          <p>&copy; {new Date().getFullYear()} Bihar Explorer. Built by {DEVELOPER_NAME}.</p>
         </div>
       </div>
     </footer>

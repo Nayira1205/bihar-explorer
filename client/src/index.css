@@ -29,10 +29,12 @@ html{
   scroll-behavior:smooth;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
 @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
